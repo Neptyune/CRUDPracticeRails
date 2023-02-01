@@ -1,24 +1,15 @@
-# README
+# CRUDPracticeRails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Snippets
 
-Things you may want to cover:
+### Create a controller
 
-* Ruby version
+``` sh
+bin/rails generate 
+```
 
-* System dependencies
+### Create a model
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+``` sh
+bin/rails generate model Article title:string body:text
+```
