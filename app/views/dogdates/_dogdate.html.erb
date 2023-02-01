@@ -1,0 +1,27 @@
+<div id="<%= dom_id dogdate %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Account:</strong>
+    <%= dogdate.account_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Dogs:</strong>
+    <%= dogdate.dogs_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Date:</strong>
+    <%= dogdate.date %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Location:</strong>
+    <%= dogdate.location %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this dogdate", dogdate, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this dogdate', edit_dogdate_path(dogdate), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

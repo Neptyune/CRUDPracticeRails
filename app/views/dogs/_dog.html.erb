@@ -1,0 +1,37 @@
+<div id="<%= dom_id dog %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Account:</strong>
+    <%= dog.account_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= dog.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Breed:</strong>
+    <%= dog.breed %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Bio:</strong>
+    <%= dog.bio %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Sociability:</strong>
+    <%= dog.sociability %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Img:</strong>
+    <%= dog.img %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this dog", dog, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this dog', edit_dog_path(dog), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
