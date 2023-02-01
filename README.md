@@ -2,11 +2,15 @@
 
 ## Snippets
 
-### Create a controller
+### Scaffolding models
+
+Creates model, controller and view with basic CRUD functionality
 
 ``` sh
-bin/rails generate 
+bin/rails generate scaffold person username firstname lastname password
 ```
+
+`
 
 ### Create a model
 
